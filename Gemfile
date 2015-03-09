@@ -41,5 +41,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Dotenv loads environment variables from .env
+  gem 'dotenv-rails'
 end
+
+# Use Twilio for handling SMS messages
+gem 'twilio-ruby'
 
