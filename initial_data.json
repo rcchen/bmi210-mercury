@@ -1,0 +1,59 @@
+{"conditions":[
+    {
+        "name": "Pneumonia",
+        "symptoms": [
+    	   {
+              "name": "Fever",
+    		      "message_text": "Have you had a fever in the last 24 hours?",
+              "weight": 1.0
+    	   },
+           {
+              "name": "Quick Breathing",
+              "message_text": "Count how many times you inhale in the next six seconds. Is it greater than 3?",
+              "weight": 1.0
+           },
+           {
+              "name": "Sore Throat",
+              "message_text": "Has your throat been sore in the last 24 hours?",
+              "weight": 1.0
+           },
+    	   {
+              "name": "Rhinorrhea",
+    		      "message_text": "Have you had a runny nose in the last 24 hours?",
+              "weight": 1.0
+    	   },
+    	   {
+              "name": "Myalgia",
+    		      "message_text": "Have you had any unexpected muscle pain in the last 24 hours?",
+              "weight": 1.0
+    	   },
+    	   {
+              "name": "Night Sweats",
+              "message_text": "Have you noticed an abnormal amount of sweating during sleep in the last 24 hours?",
+              "weight": 1.0
+           },
+    	   {
+              "name": "Sputum",
+              "message_text": "Have you had a cough containing mucus in the last 24 hours?",
+              "weight": 1.0
+           },
+        ],
+        "risk_factors": [
+           {
+              "name": "Asthma",
+              "message_text": "Do you have asthma?",
+              "weight": 1.0
+           },
+           {
+              "name": "Smoking",
+              "message_text": "Are you a smoker?",
+              "weight": 1.0
+           },
+           {
+              "name": "Weak Immune System",
+              "message_text": "Do you have a weakened or supressed immune system?",
+              "weight": 1.0
+           },
+        ]
+    },
+]}
