@@ -28,6 +28,12 @@
         <Class IRI="#Asthma_attack_symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Blackouts_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_in_diarrhea"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Bloody_diarrhea"/>
     </Declaration>
     <Declaration>
@@ -44,6 +50,18 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_lethargy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_thirst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GERD"/>
@@ -73,7 +91,16 @@
         <Class IRI="#Moderate_dehydration_symptoms"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Myalgia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Night_sweats"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Not_requiring_immediate_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pleuritic_chest_pain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pneumonia"/>
@@ -91,6 +118,9 @@
         <Class IRI="#Pneumonia_symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Productive_cough"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Prolonged_diarrhea"/>
     </Declaration>
     <Declaration>
@@ -101,6 +131,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Severe_dehydration_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunken_eyes"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Symptom"/>
@@ -268,6 +301,14 @@
         <Class IRI="#Symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Blackouts_upon_standing"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_in_diarrhea"/>
+        <Class IRI="#Bloody_diarrhea_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Bloody_diarrhea"/>
         <Class IRI="#Diarrheal_disease"/>
     </SubClassOf>
@@ -300,6 +341,22 @@
     <SubClassOf>
         <Class IRI="#Diarrheal_symptom"/>
         <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness_upon_standing"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_lethargy"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_thirst"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fever"/>
+        <Class IRI="#Pneumonia_minor_symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GERD"/>
@@ -359,8 +416,20 @@
         <Class IRI="#Diarrheal_symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Myalgia"/>
+        <Class IRI="#Pneumonia_minor_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Night_sweats"/>
+        <Class IRI="#Pneumonia_minor_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Not_requiring_immediate_care"/>
         <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pleuritic_chest_pain"/>
+        <Class IRI="#Pneumonia_minor_symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pneumonia"/>
@@ -397,6 +466,10 @@
         <Class IRI="#Symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Productive_cough"/>
+        <Class IRI="#Pneumonia_minor_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Prolonged_diarrhea"/>
         <Class IRI="#Diarrheal_disease"/>
     </SubClassOf>
@@ -414,6 +487,10 @@
     <SubClassOf>
         <Class IRI="#Severe_dehydration_symptom"/>
         <Class IRI="#Diarrheal_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunken_eyes"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Asthma_attack"/>

@@ -1,0 +1,15 @@
+<strong>Registered Entities</strong>
+<ul>
+<% @diseases.each do |disease| %>
+    <li><%= disease.name %>
+    <ul>
+        <li>
+        <% if disease.symptoms.first %>
+            <%= disease.symptoms.first.symptoms.collect {|symptom| symptom.name}.join(",") %>
+        <% end %>
+        </li>
+        <li><%= disease.factors.first %></li>
+    </ul>
+    </li>
+<% end %>
+</ul>

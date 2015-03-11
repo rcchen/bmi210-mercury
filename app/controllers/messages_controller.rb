@@ -26,8 +26,6 @@ class MessagesController < ApplicationController
           body = body.downcase
           if body == "yes" or body == "y" or body == "no" or body == "n" 
             last_log.answer = body
-
-
             # Finds the next message to be sent according to the condtion
             message = Message.find(last_log.message_id)
             messages = Message.where(condition: message.condition)
@@ -37,11 +35,11 @@ class MessagesController < ApplicationController
               Log.create(:message_id => next_message.id, :user_id => user.id)
             else
               send_message phone, recommendation(user)
+            end
           else
             send_message phone, "Please enter either yes or no."
           end 
         end
-
       # User has just registered so there is no last log
       else
         # Rotate through missing information
@@ -52,6 +50,7 @@ class MessagesController < ApplicationController
             send_message phone, "Which condition would you like to test?"
           else
             send_message phone, "Please enter a valid age."
+          end
         else
           if body == "MI" or "Pneumonia" or "Diarrhea"
             messages = Message.where(condition: body)
@@ -63,12 +62,6 @@ class MessagesController < ApplicationController
         end
       end
     end
-
-
-    
-
-    
-
     render nothing: true
   end
 
@@ -80,18 +73,18 @@ class MessagesController < ApplicationController
     return message.sid
   end
 
-  def recommendation(user)
-    logs = Log.where(user_id: user.id)
-    for log in logs
-      if log.answer == "yes" total_weight += log.message.weight
-
-      end
-    end
-    if total_weight >= logs.first.message.factor.condition.threshold
-      "Your total weight is " + total_weight + " and the threshold is " + logs.first.message.factor.condition.threshold + ". We recommend that you visit a hospital."
-    else
-      "Your total weight is " + total_weight + " and the threshold is " + logs.first.message.factor.condition.threshold + ". We do not recommend that you visit a hospital."
-    end
-  end
+  # def recommendation(user)
+  #   logs = Log.where(user_id: user.id)
+  #   for log in logs
+  #     if log.answer == "yes"
+  #       total_weight += log.message.weight
+  #     end
+  #   end
+  #   if total_weight >= logs.first.message.factor.condition.threshold
+  #     "Your total weight is " + total_weight + " and the threshold is " + logs.first.message.factor.condition.threshold + ". We recommend that you visit a hospital."
+  #   else
+  #     "Your total weight is " + total_weight + " and the threshold is " + logs.first.message.factor.condition.threshold + ". We do not recommend that you visit a hospital."
+  #   end
+  # end
 
 end

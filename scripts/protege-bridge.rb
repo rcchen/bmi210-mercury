@@ -1,5 +1,5 @@
 # Creates a watcher process to import changes from Protege into the server
-# Usage: ruby protege-bridge.rb <filename>
+# Usage: rails runner protege-bridge.rb <filename>
 # Filename must be an OWL/XML file created by Protege
 
 require "filewatcher"
@@ -21,19 +21,6 @@ def synchronizeDatabase
     # Load file into a Nokogiri object for parsing
     f = File.open(OWL_FILE)
     doc = Nokogiri::XML(f)
-
-    # Locate all of the entity declarations
-    # declarations = doc.css("Declaration")
-    # declarations.each do |declaration|
-    #     # Can either be a Class, ObjectProperty, or NamedIndividual
-    #     declaration_types = ["Class", "ObjectProperty", "NamedIndividual"]
-    #     declaration_types.each do |declaration_type|
-    #         declaration_class = declaration.css(declaration_type).first
-    #         if declaration_class
-    #             puts "#{declaration_type} - #{declaration_class.attr("IRI")}"
-    #         end
-    #     end
-    # end
 
     # First register all of the subclasses into the system
     subclasses = doc.css("SubClassOf")
@@ -58,7 +45,6 @@ def synchronizeDatabase
                 factor = Factor.find_by_name(second)
                 if disease
                     if symptom and DiseaseSymptom.where(:disease_id => disease.id, :symptom_id => symptom.id).empty?
-                        puts "creatingsymptomthing"
                         DiseaseSymptom.create(:disease_id => disease.id, :symptom_id => symptom.id)
                         numRegistered += 1
                     elsif factor and DiseaseFactor.where(:disease_id => disease.id, :factor_id => factor.id).empty?
@@ -135,9 +121,6 @@ def synchronizeDatabase
             end
         end
     end
-
-    # Then form associations between diseases/symptoms and diseases/factors
-
 
     puts "Diseases: #{Disease.all.count}\tSymptoms: #{Symptom.all.count}\tRisk_factors: #{Factor.all.count}\n"
 
