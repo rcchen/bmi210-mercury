@@ -1,7 +1,4 @@
 class Factor < ActiveRecord::Base
-  belongs_to :condition
-  has_one :message
-
-  validates :name, presence: true, allow_blank: false
-  validates :type, presence: true, allow_blank: false
+    has_many :diseases, through: :disease_factors
+    has_one :parent, class_name: :Factor, foreign_key: :parent_id
 end

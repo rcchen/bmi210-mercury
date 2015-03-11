@@ -34,3 +34,6 @@ bower.json
 # Ignore pow environment settings
 .powenv
 .env
+
+# What is this I don't even
+.DS_Store

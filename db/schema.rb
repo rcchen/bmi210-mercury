@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150309071858) do
+ActiveRecord::Schema.define(version: 20150311063314) do
+
+  create_table "disease_factors", force: :cascade do |t|
+    t.integer "disease_id"
+    t.integer "factor_id"
+  end
+
+  create_table "disease_symptoms", force: :cascade do |t|
+    t.integer "disease_id"
+    t.integer "symptom_id"
+  end
+
+  create_table "diseases", force: :cascade do |t|
+    t.string  "name"
+    t.integer "parent_id"
+  end
+
+  create_table "factors", force: :cascade do |t|
+    t.string  "name"
+    t.integer "parent_id"
+  end
 
   create_table "logs", force: :cascade do |t|
     t.integer "user_id"
@@ -20,6 +40,12 @@ ActiveRecord::Schema.define(version: 20150309071858) do
 
   create_table "messages", force: :cascade do |t|
     t.string "message"
+    t.float  "weight"
+  end
+
+  create_table "symptoms", force: :cascade do |t|
+    t.string  "name"
+    t.integer "parent_id"
   end
 
   create_table "users", force: :cascade do |t|

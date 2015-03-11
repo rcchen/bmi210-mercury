@@ -49,3 +49,6 @@ end
 # Use Twilio for handling SMS messages
 gem 'twilio-ruby'
 
+# Watch for changes to the .owl file
+gem 'filewatcher'
+
