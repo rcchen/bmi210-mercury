@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
 
     # Retrieve relevant parameters from the message body
     phone = params[:From]
-    body = params[:Body]
+    request = params[:Body]
 
     # Check to see if the user is registered. If not, register them and prompt with the age question
     user = User.find_by_phone(phone)
@@ -17,30 +17,45 @@ class MessagesController < ApplicationController
       user = User.create(:phone => phone)
     end
 
-    # Retrieve the last message sent to the user using logs
-    last_log = user.logs.last
+    # Create a variable for the response being sent
+    response = nil
 
-    # Check to see if there has been a message
-    if last_log
-
-      # Rotate through missing information
-      if last_log.message_id == 1
-        user.age = Integer(body)
+    # Check to see if the user has an age yet
+    if !user.age
+    
+      # Attempt to parse the current response into an age
+      if request.to_i != 0
+        user.age = Integer(request)
         user.save
-        Log.create(:message_id => 2, :user_id => user.id)
+        response = "Your age is #{user.age.to_s}"
+      else
+        response = "What is your age?"
       end
 
-    # User has just registered so there is no last log
-    else
-      Log.create(:message_id => 1, :user_id => user.id)
+      Log.create(:user_id => user.id, :request => request, :response => response)
+      send_message phone, response      
+
     end
 
-    # Rotate through missing information
-    if user.age.nil?
-      send_message phone, "What is your age?"
+    # Check to see if there has been a diagnosis in process
+    diagnosis = Diagnosis.where(:user_id => user.id, :in_progress => true)
+
+    # If the diagnosis exists, just keep going with it
+    if diagnosis.exists?
+
+
+
+    # Start a new diagnosis
     else
-      send_message phone, "Your age is #{user.age}"
+
+      diagnosis = Diagnosis.create(:user_id => user.id, :in_progress => true)
+
     end
+
+
+
+    Log.create(:user_id => user.id, :request => request, :response => response)
+    send_message phone, response
 
     render nothing: true
   end
