@@ -13,12 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20150311213656) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "diagnoses", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "disease_id"
     t.integer  "log_id"
     t.integer  "symptom_id"
     t.integer  "factor_id"
+    t.decimal  "symptom_score"
+    t.decimal  "factor_score"
+    t.boolean  "in_progress"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -53,6 +59,7 @@ ActiveRecord::Schema.define(version: 20150311213656) do
 
   create_table "symptoms", force: :cascade do |t|
     t.string  "name"
+    t.integer "severity"
     t.integer "parent_id"
   end
 

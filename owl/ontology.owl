@@ -22,6 +22,12 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#Age_over_60"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asthma"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Asthma_attack"/>
     </Declaration>
     <Declaration>
@@ -40,6 +46,12 @@
         <Class IRI="#Bloody_diarrhea_symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Diaphoresis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea_moderate_dehydration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Diarrhea_severe_dehydration"/>
     </Declaration>
     <Declaration>
@@ -55,10 +67,19 @@
         <Class IRI="#Dizziness_upon_standing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Dyspnea_cardiac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dyspnea_lung"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Extreme_lethargy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Extreme_thirst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_history"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fever"/>
@@ -70,16 +91,19 @@
         <Class IRI="#GERD_symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hemoptysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immunosuppressed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inexplicable_anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lightheadedness"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MI"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MI_additional_symptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MI_major_symptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MI_minor_symptom"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MI_risk_factors"/>
@@ -88,16 +112,46 @@
         <Class IRI="#MI_symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Male_sex"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Moderate_dehydration_symptoms"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Myalgia"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Night_sweats"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#No_known_illness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Not_requiring_immediate_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_after_eating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_radiates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_upon_lying_down"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pleuritic_chest_pain"/>
@@ -106,16 +160,13 @@
         <Class IRI="#Pneumonia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pneumonia_major_symptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Pneumonia_risk_factors"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pneumonia_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prior_MI"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Productive_cough"/>
@@ -130,13 +181,31 @@
         <Class IRI="#Risk_factor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Severe_dehydration_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sudden_onset"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sunken_eyes"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tachypnea"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_risk_factor"/>
@@ -286,8 +355,16 @@
         <NamedIndividual IRI="#Unconsciousness"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Age_over_60"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Asthma_attack"/>
-        <Class IRI="#Disease"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Asthma_attack"/>
@@ -324,6 +401,21 @@
         <Class IRI="#Diarrheal_symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Diaphoresis"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea_moderate_dehydration"/>
+        <Class IRI="#Diarrheal_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea_moderate_dehydration"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Moderate_dehydration_symptoms"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Diarrhea_severe_dehydration"/>
         <Class IRI="#Diarrheal_disease"/>
     </SubClassOf>
@@ -347,6 +439,14 @@
         <Class IRI="#Moderate_dehydration_symptoms"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Dyspnea_cardiac"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dyspnea_lung"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Extreme_lethargy"/>
         <Class IRI="#Severe_dehydration_symptom"/>
     </SubClassOf>
@@ -355,12 +455,16 @@
         <Class IRI="#Moderate_dehydration_symptoms"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Family_history"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Fever"/>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
+        <Class IRI="#Pneumonia_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GERD"/>
-        <Class IRI="#Disease"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GERD"/>
@@ -372,6 +476,22 @@
     <SubClassOf>
         <Class IRI="#GERD_symptom"/>
         <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemoptysis"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immunosuppressed"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inexplicable_anxiety"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lightheadedness"/>
+        <Class IRI="#MI_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MI"/>
@@ -392,18 +512,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MI_additional_symptom"/>
-        <Class IRI="#MI_symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MI_major_symptom"/>
-        <Class IRI="#MI_symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MI_minor_symptom"/>
-        <Class IRI="#MI_symptom"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MI_risk_factors"/>
         <Class IRI="#Risk_factor"/>
     </SubClassOf>
@@ -412,24 +520,64 @@
         <Class IRI="#Symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Male_sex"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Moderate_dehydration_symptoms"/>
         <Class IRI="#Diarrheal_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Myalgia"/>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#MI_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Night_sweats"/>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#No_known_illness"/>
+        <Class IRI="#Asthma_attack_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_pain"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_pressure"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_tightness"/>
+        <Class IRI="#MI_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Not_requiring_immediate_care"/>
         <Class IRI="#Disease"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_after_eating"/>
+        <Class IRI="#GERD_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_radiates"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_upon_lying_down"/>
+        <Class IRI="#GERD_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Pleuritic_chest_pain"/>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
+        <Class IRI="#Pneumonia_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pneumonia"/>
@@ -450,14 +598,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pneumonia_major_symptom"/>
-        <Class IRI="#Pneumonia_symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <Class IRI="#Pneumonia_symptom"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Pneumonia_risk_factors"/>
         <Class IRI="#Risk_factor"/>
     </SubClassOf>
@@ -466,8 +606,12 @@
         <Class IRI="#Symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Prior_MI"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Productive_cough"/>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
+        <Class IRI="#Pneumonia_symptom"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Prolonged_diarrhea"/>
@@ -485,12 +629,36 @@
         <Class IRI="#Diarrheal_symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Severe_chest_pain"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_chest_pressure"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_chest_tightness"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Severe_dehydration_symptom"/>
         <Class IRI="#Diarrheal_symptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Smoker"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sudden_onset"/>
+        <Class IRI="#Asthma_attack_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sunken_eyes"/>
         <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tachypnea"/>
+        <Class IRI="#Pneumonia_symptom"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Asthma_attack"/>
@@ -505,14 +673,6 @@
         <Class IRI="#Symptom"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#MI_risk_factors"/>
-        <NamedIndividual IRI="#Age_over_60"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_risk_factors"/>
-        <NamedIndividual IRI="#Asthma"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Moderate_dehydration_symptoms"/>
         <NamedIndividual IRI="#Blackouts_upon_standing"/>
     </ClassAssertion>
@@ -525,20 +685,8 @@
         <NamedIndividual IRI="#Decreased_urine"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Diaphoresis"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Moderate_dehydration_symptoms"/>
         <NamedIndividual IRI="#Dizziness_upon_standing"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Dyspnea_cardiac"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_major_symptom"/>
-        <NamedIndividual IRI="#Dyspnea_lung"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Severe_dehydration_symptom"/>
@@ -549,124 +697,24 @@
         <NamedIndividual IRI="#Extreme_thirst"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#MI_risk_factors"/>
-        <NamedIndividual IRI="#Family_history"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <NamedIndividual IRI="#Fever"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_major_symptom"/>
-        <NamedIndividual IRI="#Hemoptysis"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_risk_factors"/>
-        <NamedIndividual IRI="#History_MI"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_risk_factors"/>
-        <NamedIndividual IRI="#Immunosuppressed"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Inexplicable_anxiety"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Moderate_dehydration_symptoms"/>
         <NamedIndividual IRI="#Irritability"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Lightheadedness"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Severe_dehydration_symptom"/>
         <NamedIndividual IRI="#Loss_of_body_weight"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#MI_risk_factors"/>
-        <NamedIndividual IRI="#Male_sex"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Prolonged_diarrhea_symptom"/>
         <NamedIndividual IRI="#More_than_14_days"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <NamedIndividual IRI="#Myalgia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Nausea"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <NamedIndividual IRI="#Night_sweats"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Asthma_attack_symptom"/>
-        <NamedIndividual IRI="#No_known_illness"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_minor_symptom"/>
-        <NamedIndividual IRI="#Non-severe_chest_pain"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_minor_symptom"/>
-        <NamedIndividual IRI="#Non-severe_chest_pressure"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_minor_symptom"/>
-        <NamedIndividual IRI="#Non-severe_chest_tightness"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#GERD_symptom"/>
-        <NamedIndividual IRI="#Pain_after_eating"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_additional_symptom"/>
-        <NamedIndividual IRI="#Pain_radiates"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#GERD_symptom"/>
-        <NamedIndividual IRI="#Pain_upon_lying_down"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <NamedIndividual IRI="#Pleuritic_chest_pain"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_minor_symptoms"/>
-        <NamedIndividual IRI="#Productive_cough"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Moderate_dehydration_symptoms"/>
         <NamedIndividual IRI="#Restlessness"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#MI_major_symptom"/>
-        <NamedIndividual IRI="#Severe_chest_pain"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_major_symptom"/>
-        <NamedIndividual IRI="#Severe_chest_pressure"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MI_major_symptom"/>
-        <NamedIndividual IRI="#Severe_chest_tightness"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Severe_dehydration_symptom"/>
         <NamedIndividual IRI="#Skin_tenting"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_risk_factors"/>
-        <NamedIndividual IRI="#Smoker"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Asthma_attack_symptom"/>
-        <NamedIndividual IRI="#Sudden_onset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Moderate_dehydration_symptoms"/>
@@ -675,10 +723,6 @@
     <ClassAssertion>
         <Class IRI="#Severe_dehydration_symptom"/>
         <NamedIndividual IRI="#Tachycardia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pneumonia_major_symptom"/>
-        <NamedIndividual IRI="#Tachypnea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Severe_dehydration_symptom"/>
@@ -698,13 +742,103 @@
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diaphoresis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_cardiac</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_lung</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hemoptysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inexplicable_anxiety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lightheadedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Myalgia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nausea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Night_sweats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Pain_radiates</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">To left arm, jaw</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pleuritic_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Productive_cough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Severe_chest_pain</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Described as a severity of &gt;6/10</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachypnea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
     </AnnotationAssertion>
 </Ontology>
 
