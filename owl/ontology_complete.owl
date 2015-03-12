@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chloeoco/ontologies/2015/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/chloeoco/ontologies/2015/2/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/chloeoco/ontologies/2015/2/untitled-ontology-6#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Age_over_60"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asthma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asthma_attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asthma_attack_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blackouts_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_in_diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bloody_diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bloody_diarrhea_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreased_urine_output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diaphoresis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea_severe_dehydration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrheal_disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrheal_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dyspnea_cardiac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dyspnea_lung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_lethargy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_thirst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_history"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GERD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GERD_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hemoptysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immunosuppressed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inexplicable_anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lightheadedness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loss_of_body_mass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MI_risk_factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MI_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male_sex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Myalgia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Night_sweats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#No_known_illness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Not_requiring_immediate_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_after_eating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_radiates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_upon_lying_down"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pleuritic_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumonia_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prior_MI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Productive_cough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prolonged_diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prolonged_diarrhea_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Releived_with_antacids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_factor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_tenting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sudden_onset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunken_eyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tachypnea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tachypnea_dehydration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_risk_factor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_symptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age_over_60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asthma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blackouts_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blood_in_diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decreased_urine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diaphoresis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dizziness_upon_standing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dyspnea_cardiac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dyspnea_lung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extreme_lethargy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extreme_thirst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Family_history"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hemoptysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#History_MI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Immunosuppressed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inexplicable_anxiety"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Irritability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loss_of_body_weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male_sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#More_than_14_days"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Myalgia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Night_sweats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_known_illness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Non-severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Non-severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Non-severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pain_after_eating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pain_radiates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pain_upon_lying_down"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pleuritic_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Productive_cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restlessness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severe_chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severe_chest_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severe_chest_tightness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin_tenting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sudden_onset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunken_eyes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachypnea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachypnea_dehydration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unconsciousness"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Age_over_60"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma_attack"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma_attack"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Asthma_attack_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma_attack_symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blackouts_upon_standing"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_in_diarrhea"/>
+        <Class IRI="#Bloody_diarrhea_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bloody_diarrhea"/>
+        <Class IRI="#Diarrheal_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bloody_diarrhea"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Bloody_diarrhea_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bloody_diarrhea_symptom"/>
+        <Class IRI="#Diarrheal_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreased_urine_output"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diaphoresis"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea_severe_dehydration"/>
+        <Class IRI="#Diarrheal_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea_severe_dehydration"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Severe_dehydration_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrheal_disease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrheal_symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness_upon_standing"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dyspnea_cardiac"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dyspnea_lung"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_lethargy"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_thirst"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_history"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fever"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GERD"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GERD"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#GERD_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GERD_symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemoptysis"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immunosuppressed"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inexplicable_anxiety"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lightheadedness"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loss_of_body_mass"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MI"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MI"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_risk_factor"/>
+            <Class IRI="#MI_risk_factors"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MI"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#MI_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MI_risk_factors"/>
+        <Class IRI="#Risk_factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MI_symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male_sex"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <Class IRI="#Diarrheal_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myalgia"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Night_sweats"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#No_known_illness"/>
+        <Class IRI="#Asthma_attack_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_pain"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_pressure"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-severe_chest_tightness"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Not_requiring_immediate_care"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Not_requiring_immediate_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_after_eating"/>
+        <Class IRI="#GERD_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_radiates"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_upon_lying_down"/>
+        <Class IRI="#GERD_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pleuritic_chest_pain"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_risk_factor"/>
+            <Class IRI="#Pneumonia_risk_factors"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Pneumonia_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia_risk_factors"/>
+        <Class IRI="#Risk_factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia_symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prior_MI"/>
+        <Class IRI="#MI_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Productive_cough"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prolonged_diarrhea"/>
+        <Class IRI="#Diarrheal_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prolonged_diarrhea"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_symptom"/>
+            <Class IRI="#Prolonged_diarrhea_symptom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prolonged_diarrhea_symptom"/>
+        <Class IRI="#Diarrheal_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Releived_with_antacids"/>
+        <Class IRI="#GERD_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_chest_pain"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_chest_pressure"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_chest_tightness"/>
+        <Class IRI="#MI_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <Class IRI="#Diarrheal_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_tenting"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoker"/>
+        <Class IRI="#Pneumonia_risk_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sudden_onset"/>
+        <Class IRI="#Asthma_attack_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunken_eyes"/>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tachypnea"/>
+        <Class IRI="#Pneumonia_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tachypnea_dehydration"/>
+        <Class IRI="#Severe_dehydration_symptom"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Asthma_attack"/>
+        <Class IRI="#Diarrheal_disease"/>
+        <Class IRI="#GERD"/>
+        <Class IRI="#MI"/>
+        <Class IRI="#Pneumonia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Disease"/>
+        <Class IRI="#Risk_factor"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Blackouts_upon_standing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloody_diarrhea_symptom"/>
+        <NamedIndividual IRI="#Blood_in_diarrhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Decreased_urine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Dizziness_upon_standing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Extreme_lethargy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Extreme_thirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Irritability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Loss_of_body_weight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prolonged_diarrhea_symptom"/>
+        <NamedIndividual IRI="#More_than_14_days"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Restlessness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Skin_tenting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_dehydration_symptoms"/>
+        <NamedIndividual IRI="#Sunken_eyes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Tachycardia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Tachypnea_dehydration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_dehydration_symptom"/>
+        <NamedIndividual IRI="#Unconsciousness"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_symptom"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_symptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Blackouts_upon_standing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you recently been &quot;blacking out&quot; or feeling very dizzy when you stand up suddenly?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Blood_in_diarrhea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you noticed any blood in your diarrhea?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Decreased_urine_output</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you / the patient stopped peeing or drastically reduced the amount of urine produced?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diaphoresis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient sweating inexplicably?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diaphoresis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dizziness_upon_standing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you been &quot;blacking out&quot; or feeling very dizzy when you stand up suddenly?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_cardiac</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient short of breath?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_cardiac</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_lung</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing any shortness of breath?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyspnea_lung</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extreme_lethargy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient extremely lethargic and slow to respond to stimuli?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extreme_thirst</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you / has the patient been extremely thirsty recently?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Does the patient have a fever? If you don&apos;t have a thermometer, does their skin feel warmer than normal?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hemoptysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you / has the patient coughed up any blood during this illness?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hemoptysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inexplicable_anxiety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient suddenly anxious for reasons they can&apos;t explain?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inexplicable_anxiety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lightheadedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient feeling lightheaded?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lightheadedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Loss_of_body_mass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you noticed a loss of more than 10% of your (or the patient&apos;s) body weight?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Myalgia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing any muscle aches?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Myalgia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nausea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing nausea?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nausea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Night_sweats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient sweating a lot during the night?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Night_sweats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#No_known_illness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have you been otherwise healthy recently? (i.e. no known illness affecting your breathing)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing any non-severe chest pain, tightness, or pressure?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing any non-severe chest pain, tightness, or pressure?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing any non-severe chest pain, tightness, or pressure?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pain_after_eating</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Does the pain get markedly worse after eating fatty or spicy foods?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pain_radiates</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Does the pain radiate to your / the patient&apos;s left arm, jaw, or back?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pain_radiates</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">additional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pain_upon_lying_down</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Does the pain get much worse when you lie down, then much better when you sit up?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pleuritic_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing chest pain that worsens when you cough or sneeze?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pleuritic_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Productive_cough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient coughing up mucus or any other substance?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Productive_cough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">minor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Prolonged_diarrhea_symptom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Has this diarrhea lasted more than 14 days (with at least 4 watery stools each day)?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Releived_with_antacids</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is the pain dramatically improved when you take / the patient takes antacids? (i.e. tums, maalox, rolaids)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing severe chest pain (more than a 6 on a scale from 1 to 10)?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_pain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing severe chest pressure or tightness?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient experiencing severe chest pressure or tightness?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_chest_tightness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Skin_tenting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When you pinch your/the patient&apos;s skin, does it take a long time to return to normal? (i.e. does the pinched portion stay elevated and white longer than a healthy person&apos;s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sudden_onset</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Did this episode come on suddenly or &quot;out of the blue&quot;?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sunken_eyes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Do your (or the patient&apos;s) eyes look sunken?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachypnea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the patient breathing more quickly than normal?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachypnea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">major</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachypnea_dehydration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are you / is the the patient breathing more quickly than normal?</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

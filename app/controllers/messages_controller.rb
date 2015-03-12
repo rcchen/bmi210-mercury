@@ -67,16 +67,13 @@ class MessagesController < ApplicationController
         end
       end
 
-      puts "==================================="
-      puts diagnosis.to_json
-      puts "==================================="
-
       # Run through all of the symptoms
       if diagnosis.disease_id != nil
+
         # Get the correct disease and symptoms
         disease = Disease.find(diagnosis.disease_id)
         symptoms = disease.symptoms.first.symptoms
-        puts symptoms.to_json
+
         # See if the user has started symptoms yet
         if diagnosis.symptom_id == nil
           diagnosis.symptom_id = -1
@@ -84,7 +81,7 @@ class MessagesController < ApplicationController
         if diagnosis.symptom_id < symptoms.length - 1
           adjusted = false
           if ["yes", "y"].include?(request.downcase)
-            diagnosis.symptom_score += 1
+            diagnosis.symptom_score += symptoms[diagnosis.symptom_id].severity
             adjusted = true
           end
           if ["no", "n"].include?(request.downcase)
@@ -97,10 +94,20 @@ class MessagesController < ApplicationController
             log_and_send(user, request, response)
           else
             diagnosis.symptom_id += 1
-            symptom_name = symptoms[diagnosis.symptom_id].name.split("_").join(" ")
-            response = "Are you currently feeling #{symptom_name}"
+            symptom = symptoms[diagnosis.symptom_id]
+            symptom_name = symptom.name.split("_").join(" ")
+            response = symptom.question + " (yes/no)"
             log_and_send(user, request, response)
           end
+        else
+          # Evaluate the score
+          if symptoms.length * 1/2 < diagnosis.symptom_score
+            response = "Based on our evaluation, you should go see a medical professional."
+          else
+            response = "Based on our evaluation, you won't need to see a medical professional, but rest would be a good idea to recover."
+          end
+          diagnosis.in_progress = false
+          log_and_send(user, request, response)
         end
         diagnosis.save
       end

@@ -6,7 +6,8 @@ class AddProtegeAssociations < ActiveRecord::Migration
     end
     create_table :symptoms do |t|
         t.string    :name
-        t.integer   :severity
+        t.string    :question
+        t.decimal   :severity
         t.integer   :parent_id
     end
     create_table :factors do |t|

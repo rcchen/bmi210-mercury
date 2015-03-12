@@ -59,7 +59,8 @@ ActiveRecord::Schema.define(version: 20150311213656) do
 
   create_table "symptoms", force: :cascade do |t|
     t.string  "name"
-    t.integer "severity"
+    t.string  "question"
+    t.decimal "severity"
     t.integer "parent_id"
   end
 

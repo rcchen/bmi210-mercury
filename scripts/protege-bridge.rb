@@ -105,7 +105,7 @@ def synchronizeDatabase
                     potentialSymptom = Symptom.find_by_name(parent)
                     if potentialSymptom and potentialSymptom.name != child
                         if !Symptom.find_by_name(child)
-                            Symptom.create(:name => child, :parent_id => potentialSymptom.id)
+                            Symptom.create(:name => child, :parent_id => potentialSymptom.id, :severity => 1)
                             numRegistered += 1
                         end
                     end
@@ -119,6 +119,21 @@ def synchronizeDatabase
                     end
                 end
             end
+        end
+    end
+
+    # Apply all of the annotations
+    annotations = doc.css("AnnotationAssertion")
+    annotations.each do |annotation|
+        symptom = Symptom.find_by_name(annotation.css("IRI").text[1..-1])
+        question = annotation.css("Literal").text
+        if (question == "major")
+            symptom.severity = 10
+        elsif (question == "minor")
+            symptom.severity = 1.5
+        else
+            symptom.question = question
+            symptom.save
         end
     end
 
